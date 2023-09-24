@@ -1,0 +1,47 @@
+/* Global */
+
+* {
+    background-color: #e8eeef;
+    /* border: solid red 1px; */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 0 25%;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+a:hover {
+    color: darkred;
+}
+
+/* Nav */
+.current {
+    color: darkblue;
+}
+
+.current:hover {
+    color: darkblue;
+}
+
+#nav-bar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#navigation li {
+    display: inline-block;
+}
+
+/* Header */
