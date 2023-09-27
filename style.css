@@ -14,7 +14,8 @@ body {
     flex-direction: column;
     width: 50%;
     margin: 0 25%;
-    min-height: 100vh;
+    flex: 1;
+    height: 100vh;
 }
 
 a {
@@ -38,6 +39,31 @@ p {
 .transparent {
     background: transparent;
 }
+
+@media only screen and (max-width: 1024px) {
+    body {
+        width: 70%;
+        margin: 0 15%
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        width: 90%;
+        margin: 0 5%;
+    }
+}
+
+/* @media only screen and (max-width: 480px) {
+    body {
+        width: 100%;
+        margin: 0;
+    }
+} */
 
 /* Nav */
 .current {
@@ -65,19 +91,17 @@ p {
 /* Header */
 
 #main-content {
-    display: flex;
+    display: flex; 
     flex-direction: row;
     flex: 1;
 }
 
 #main-content-left-container {
     width: 50%;
-    height: 100px;
 }
 
 #main-content-right-container {
     width: 50%;
-    height: 100px;
 }
 
 #main-project-container {
@@ -101,18 +125,41 @@ p {
     margin: 10px 0;
 }
 
+#main-contact-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 480px) {
+    #main-content {
+        flex-direction: column;
+    }
+    
+    #main-content-left-container {
+        width: 100%;
+    }
+
+    #main-content-right-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    #finished-projects,
+    #work-in-progress {
+        text-align: center;
+    }
+}
+
 .project {
     display: flex;
     justify-content: space-between;
 }
 
-.project-left-container {
-    width: 45%;
-    align-self: center;
-}
-
+.project-left-container,
 .project-right-container {
     width: 45%;
+    align-self: center;
 }
 
 .project-pic {
@@ -123,6 +170,17 @@ p {
 .skills-icon {
     width: 10%;
     height: auto;
+}
+
+@media only screen and (max-width: 480px) {
+    .project {
+        flex-direction: column;
+    }
+
+    .project-left-container,
+    .project-right-container {
+        width: 100%;
+    }
 }
 
 /* Footer */
