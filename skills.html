@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Source+Sans+3:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
     <title>My Porfolio - Skills</title>
 </head>
 <body>
     <nav id="nav-bar">
         <h1 id="main-heading">Daniel S Sedaca</h1>
+        <div id="dropdown">
+            <button onclick="myFunction()" class="dropbtn">&#9776;</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="/index.html">About Me</a>
+                <a href="/projects.html">Projects</a>
+                <a href="#">Skills</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+        </div>
         <ul id="navigation">
             <li><a href="/index.html">About Me</a></li>
             <li><a href="/projects.html">Projects</a></li>
