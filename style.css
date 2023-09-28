@@ -96,16 +96,11 @@ p {
     }
 
     .dropbtn {
-        background-color: darkred;
         color: gray;
         padding: 16px;
         font-size: 16px;
         border: none;
         cursor: pointer;
-    }
-
-    .dropbtn:hover {
-        background-color: darkblue;
     }
 
     .dropdown {
